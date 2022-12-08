@@ -261,7 +261,7 @@ function action4_package_emacs ()
     #
     if test ! -f $emacs_depsfile; then
         echo Missing dependency file $emacs_depsfile. Run with --deps first.
-        return -1
+        return -1https://github.com/Zero2key/emacs-build/blob/emacs-29/emacs-build.sh
     fi
     rm -f "$emacs_nodepsfile" "$emacs_srcfile"
     mkdir -p `dirname "$emacs_nodepsfile"`
@@ -508,7 +508,7 @@ if test "$emacs_slim_build" = "yes"; then
     dependency_exclusions="$dependency_slim_exclusions"
 fi
 if test -z "$emacs_branch"; then
-    emacs_branch="master"
+    emacs_branch="emacs-29"
 fi
 actions=`unique_list $actions`
 if test -z "$actions"; then

@@ -261,7 +261,7 @@ function action4_package_emacs ()
     #
     if test ! -f $emacs_depsfile; then
         echo Missing dependency file $emacs_depsfile. Run with --deps first.
-        return -1https://github.com/Zero2key/emacs-build/blob/emacs-29/emacs-build.sh
+        return -1
     fi
     rm -f "$emacs_nodepsfile" "$emacs_srcfile"
     mkdir -p `dirname "$emacs_nodepsfile"`

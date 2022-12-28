@@ -52,8 +52,8 @@ jobs:
         if: runner.os == 'Windows'
         # Require --nativecomp and --with-* flags, else the deps will not be included properly
         run: |
-          .\emacs-build.cmd --nativecomp --slim --with-w32 --with-rsvg --build
-          .\emacs-build.cmd --nativecomp --slim --with-w32 --with-rsvg --pack-all
+          .\emacs-build.cmd --nativecomp --with-w32 --with-rsvg --build
+          .\emacs-build.cmd --nativecomp --with-w32 --with-rsvg --pack-all
 
       # Upload everything
       - name: Upload binaries
